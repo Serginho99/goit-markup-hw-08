@@ -1,0 +1,167 @@
+.footer {
+  background-color: #2f303a;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-nav__logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $accent-color;
+  margin-bottom: 20px;
+  display: flex;
+  width: 145px;
+  height: 31px;
+}
+
+.footer-nav__sudio {
+  color: $secondary-color;
+}
+
+.address {
+  font-style: normal;
+  width: 231px;
+  height: 81px;
+  margin-top: 0;
+}
+
+.address__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.address__link {
+  color: $secondary-color;
+  transition: color $time;
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.footer-address {
+  color: #ffffff99;
+  transition: color $time;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer-social {
+  margin-left: 70px;
+}
+
+.footer-social__title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: $secondary-color;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.social-box {
+  width: 206px;
+  height: 44px;
+}
+
+.social-box__link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color $time;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.social-box__list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-box__item {
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.social-box__icon {
+  fill: $secondary-color;
+}
+
+.email-box {
+  margin-left: 93px;
+}
+
+.email-box__title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: $secondary-color;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.subscribe-box__input {
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-box__btn {
+  font-family: inherit;
+  color: $secondary-color;
+  background-color: $accent-color;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  padding: 10px 29px;
+  border-radius: 4px;
+  border-color: transparent;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.subscribe-box {
+  display: flex;
+  position: relative;
+}
+
+.subscribe-box__svg {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 28px;
+  top: 13px;
+}
+
+.subscribe-box__input {
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
