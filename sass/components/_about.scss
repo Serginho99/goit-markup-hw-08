@@ -1,5 +1,9 @@
 .about {
-  padding-top: 94px;
+  // padding-top: 94px;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .visually-hidden {
@@ -22,16 +26,18 @@
   text-transform: uppercase;
   color: $heading-color;
   margin-bottom: 10px;
+  text-align: center;
+  // margin-top: 30px;
 }
 
 .about__list {
-  display: flex;
+  // display: flex;
 }
 
 .about__item {
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
   &::before {
     content: "";
     display: block;
@@ -66,5 +72,4 @@
   letter-spacing: 0.03em;
   color: $main-color;
   height: 75px;
-  width: 270px;
 }

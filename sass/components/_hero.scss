@@ -15,19 +15,34 @@
   margin-left: auto;
   margin-right: auto;
   height: 600px;
+  @media screen and(min-width: 480px) {
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 }
 
 .hero__title {
-  font-size: 44px;
-  line-height: 1.36;
-  max-width: 696px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $secondary-color;
-  margin: 30px auto;
-  height: 120px;
-  margin-top: 0;
+  // font-size: 44px;
+  // line-height: 1.36;
+  // max-width: 696px;
+  // text-align: center;
+  // letter-spacing: 0.06em;
+  // text-transform: uppercase;
+  // color: $secondary-color;
+  // margin: 30px auto;
+  // height: 120px;
+  // margin-top: 0;
+  @media screen and(min-width: 480px) {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $secondary-color;
+    margin-bottom: 30px;
+  }
 }
 
 .hero__btn {
