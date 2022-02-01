@@ -2,6 +2,9 @@
   padding-top: 94px;
   padding-bottom: 94px;
   text-align: center;
+  @media screen and (min-width: 480) {
+    display: none;
+  }
 }
 
 .work__list {
