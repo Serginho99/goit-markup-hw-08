@@ -1,9 +1,7 @@
 .about {
   // padding-top: 94px;
-  @media screen and (min-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
   @media screen and(min-width:1200px) {
     padding-top: 94px;
   }
@@ -55,11 +53,14 @@
   //   margin-right: 30px;
   // }
   @media screen and(min-width:768px) {
-    width: calc(100% / 2 - 30px);
-    &:nth-child(odd) {
+    width: calc(100% / 2 - 15px);
+    &:nth-last-child(2n) {
       margin-right: 30px;
+      margin-bottom: 30px;
     }
-    margin-bottom: -30px;
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
   }
   &::before {
     content: "";
@@ -101,7 +102,4 @@
   letter-spacing: 0.03em;
   color: $main-color;
   height: 75px;
-  @media screen and(min-width:768px) {
-    margin-bottom: 30px;
-  }
 }
