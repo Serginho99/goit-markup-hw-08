@@ -75,6 +75,14 @@ img {
           align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .main-nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .main-nav__logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -146,11 +154,29 @@ img {
   margin-left: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .contact-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 84px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contact-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 305px;
   }
 }
 
@@ -162,6 +188,13 @@ img {
   .contact-list__item:not(:last-child) {
     margin-bottom: 10px;
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-list__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -187,13 +220,56 @@ img {
 @media screen and (min-width: 768px) {
   .contact-list__link {
     padding: 0;
-    margin-left: 84px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    font-weight: 500;
   }
 }
 
 .contact-list__icon {
-  margin-right: 10px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-list__icon {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-list__icon {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-list__icon--icon-envelope {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-list__icon--icon-envelope {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-list__icon--icon-smartphone {
+    width: 10px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-list__icon--icon-smartphone {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .nav__item {
