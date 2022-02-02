@@ -25,6 +25,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: -10px;
   @media screen and(min-width:1200px) {
     display: flex;
   }
@@ -38,13 +39,13 @@
   // height: 92px;
   // & + & {
   //   margin-left: 30px;
-  // }
-  width: calc(100% / 2 - 15px);
-  // &:nth-child(odd) {
+  // }// &:nth-child(odd) {
   //   margin-right: 30px;
+  width: calc((100% - 4 * 5px) / 2);
+  margin: 5px;
   // }
   // margin-bottom: 30px;
-  @media screen and(min-width:768px) {
+  @media screen and(min-width: 768px) {
     width: calc(100% / 3 - 30px);
   }
   @media screen and(min-width:1200px) {
