@@ -412,6 +412,9 @@ img {
   .about__item:not(:last-child) {
     margin-right: 30px;
   }
+  .about__item:nth-last-child(2n) {
+    margin-bottom: 0;
+  }
 }
 
 .icon-antenna::before {
@@ -435,7 +438,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-  height: 75px;
 }
 
 .work {
@@ -737,18 +739,9 @@ img {
   width: calc(100% / 2 - 15px);
 }
 
-.clients__item:nth-child(odd) {
-  margin-right: 30px;
-}
-
-.clients__item {
-  margin-bottom: 30px;
-}
-
 @media screen and (min-width: 768px) {
   .clients__item {
     width: calc(100% / 3 - 30px);
-    margin-right: 30px;
   }
 }
 
@@ -770,6 +763,9 @@ img {
   }
   .clients__item:nth-child(6n) {
     margin-right: 0;
+  }
+  .clients__item + .clients__item {
+    margin-left: 30px;
   }
 }
 
