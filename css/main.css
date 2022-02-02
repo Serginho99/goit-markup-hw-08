@@ -75,6 +75,14 @@ img {
           align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .main-nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .main-nav {
     -webkit-box-pack: center;
