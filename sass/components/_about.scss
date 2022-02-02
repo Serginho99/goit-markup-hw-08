@@ -43,6 +43,7 @@
   @media screen and(min-width:768px) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   @media screen and(min-width:1200px) {
     display: flex;
@@ -58,6 +59,7 @@
     &:nth-child(odd) {
       margin-right: 30px;
     }
+    margin-bottom: -30px;
   }
   &::before {
     content: "";
@@ -100,8 +102,6 @@
   color: $main-color;
   height: 75px;
   @media screen and(min-width:768px) {
-    &:nth-child(1) {
-      margin-bottom: 30px;
-    }
+    margin-bottom: 30px;
   }
 }

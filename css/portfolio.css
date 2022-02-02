@@ -40,6 +40,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  outline: 2px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -610,7 +611,7 @@ img {
 }
 
 .subscribe-box__input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   border-radius: 4px;
   padding-left: 16px;
@@ -618,6 +619,12 @@ img {
   background-color: #2f303a;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-box__input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
