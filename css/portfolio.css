@@ -320,7 +320,7 @@ img {
   padding: 0;
 }
 
-.menu-button__close {
+.menu-toggle__close {
   width: 18px;
   height: 18px;
   position: absolute;
@@ -328,9 +328,25 @@ img {
   left: 0;
 }
 
-.menu-button__menu {
+.menu-toggle__menu {
   width: 24px;
   height: 16px;
+}
+
+.menu-toggle.is-open.icon-close {
+  display: block;
+}
+
+.menu-toggle.icon-close {
+  display: none;
+}
+
+.menu-toggle.is-open.icon-menu {
+  display: block;
+}
+
+.menu-toggle.icon-menu {
+  display: none;
 }
 
 .menu-toggle {

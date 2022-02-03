@@ -28,6 +28,7 @@
   margin: -15px;
   @media screen and(min-width:1200px) {
     display: flex;
+    margin: 0;
   }
 }
 
@@ -63,6 +64,7 @@
       margin-left: 30px;
     }
   }
+  margin: 0;
 }
 
 .clients__link {
