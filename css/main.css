@@ -1462,7 +1462,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: currentColor;
+  color: #212121;
 }
 
 .modal__button:hover .modal__icon,
