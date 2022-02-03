@@ -333,22 +333,6 @@ img {
   height: 16px;
 }
 
-.menu-toggle.is-open.icon-close {
-  display: block;
-}
-
-.menu-toggle.icon-close {
-  display: none;
-}
-
-.menu-toggle.is-open.icon-menu {
-  display: block;
-}
-
-.menu-toggle.icon-menu {
-  display: none;
-}
-
 .menu-toggle {
   display: -webkit-box;
   display: -ms-flexbox;
