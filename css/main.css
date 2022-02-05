@@ -334,6 +334,7 @@ img {
 
 .menu-container {
   overflow-y: scroll;
+  height: 100%;
 }
 
 .menu-toggle-open {
@@ -628,6 +629,7 @@ img {
 @media screen and (min-width: 1200px) {
   .about {
     padding-top: 94px;
+    padding-bottom: 0;
   }
 }
 
@@ -658,12 +660,6 @@ img {
 @media screen and (min-width: 768px) {
   .about__title {
     text-align: start;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .about__title {
-    margin-top: 30px;
   }
 }
 
@@ -723,7 +719,7 @@ img {
   .about__item:not(:last-child) {
     margin-right: 30px;
   }
-  .about__item:nth-last-child(2n) {
+  .about__item:nth-child(2), .about__item:nth-child(1) {
     margin-bottom: 0;
   }
 }
