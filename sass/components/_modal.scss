@@ -43,6 +43,9 @@
   padding: 40px;
   border-radius: 4px;
   overflow-y: scroll;
+  @media screen and(max-width:467px) {
+    width: 90vw;
+  }
   @media screen and(min-width:768px) {
     position: absolute;
     width: 451px;

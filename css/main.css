@@ -1436,6 +1436,12 @@ img {
   overflow-y: scroll;
 }
 
+@media screen and (max-width: 467px) {
+  .modal {
+    width: 90vw;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .modal {
     position: absolute;
